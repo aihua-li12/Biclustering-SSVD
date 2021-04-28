@@ -1,4 +1,5 @@
 import numpy as np
+import scipy.linalg as la 
 from SSVD.functions import SSVD_layer
 from SSVD.functions import SSVD
 from SSVD.functions import clusterheatmap
