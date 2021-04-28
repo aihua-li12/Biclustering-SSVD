@@ -10,10 +10,15 @@ You can install the package by using: `pip install git+https://github.com/Yuxuan
 Functions in this package:  `SSVD_layer`,`SSVD_layer3c`, `SSVD`, `SSVD3c`,and `clusterheatmap`
 
 You can load these functions by using:
+
 `from SSVD.functions import SSVD_layer`
+
 `from SSVD.functions import SSVD`
+
 `from SSVD.opt import SSVD_layer3c`
+
 `from SSVD.opt import SSVD3c`
+
 `from SSVD.functions import clusterheatmap`
  
  ## SSVD_layer
