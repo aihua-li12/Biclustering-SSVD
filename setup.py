@@ -13,8 +13,7 @@ setup(name='SSVD',
                   'License :: OSI Approved :: MIT License',
                   'Programming Language :: Python :: 3',
                   ],
-      package_dir={"": "src"},
-      packages=setuptools.find_packages(where="src"),
+      packages=setuptools.find_packages(),
       python_requires=">=3.6",
       zip_safe=False)
 
