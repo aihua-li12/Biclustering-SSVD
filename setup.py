@@ -1,11 +1,11 @@
 from setuptools import setup
 
-setup(name='SSVD',
+setup(name='SSVDpkg_663proj21',
       version='0.1',
       description='SSVD algorithm for biclustering',
       author='Aihua Li, Yuxuan Chen',
       author_email='yc450@duke.edu',
-      packages=['SSVD'],
+      packages=['SSVDpkg_663proj21'],
       url='https://github.com/YuxuanMonta/STA663-final-project-AY',
       classifiers=[
                   'Intended Audience :: Developers',
@@ -13,7 +13,6 @@ setup(name='SSVD',
                   'License :: OSI Approved :: MIT License',
                   'Programming Language :: Python :: 3',
                   ],
-      packages=setuptools.find_packages(),
       python_requires=">=3.6",
       zip_safe=False)
 
