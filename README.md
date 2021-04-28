@@ -8,7 +8,11 @@ SSVD is a tool for biclustering by seeking the low-rank matrix approximation wit
 Simulations, application on the tumor data set [2], and comparative analysis between SSVD, SVD, and SPCA are included in the report. Results are accessible in the corresponding Jupyter notebooks. 
 
 
-You can install the package by using `pip install SSVDpkg_663proj21` in the terminal. After the installation, in Python, import the functions by
+You can install the package by using 
+```
+pip install SSVDpkg_663proj21
+```
+in the terminal. After the installation, in Python, import the functions by
 ```
 import SSVDpkg_663proj21
 from SSVDpkg_663proj21 import functions
