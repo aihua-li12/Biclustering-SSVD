@@ -3,7 +3,7 @@ Authors: Aihua Li, Yuxuan Chen
 
 ## Introduction
 
-Based on the paper **Biclustering via Sparse Singular Value Decomposition** written by **Mihee Lee**, **Haipeng Shen**, **Jianhua Z. Huang**, and **J.S. Marron** from University of North Carolina at Chapel Hill [1], this project tries to investigate, develope, and realize biclustering by utilizing Sparse Singular Value Decomposition (SSVD).
+Based on the paper **Biclustering via Sparse Singular Value Decomposition** written by **Mihee Lee**, **Haipeng Shen**, **Jianhua Z. Huang**, and **J.S. Marron** from University of North Carolina at Chapel Hill [1], this project tries to investigate, develop, and realize biclustering by utilizing Sparse Singular Value Decomposition (SSVD).
 
 SSVD is a tool for biclustering by seeking the low-rank matrix approximation with sparsed left and right sigular vectors of original matrix. This project realizes the SSVD algorithm and optimizes the process. 
 
