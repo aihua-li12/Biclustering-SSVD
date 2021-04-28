@@ -4,8 +4,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 from functools import reduce
-from SSVD import SSVD_layer
-from SSVD import SSVD
+from SSVD.functions import SSVD_layer
+from SSVD.functions import SSVD
 
 def clusterheatmap(us, ss, vs, label):
     """Plot the clustered heatmap"""
