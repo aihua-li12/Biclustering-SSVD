@@ -18,7 +18,7 @@ The key functions in this package are:
 
 - `clusterheatmap(us, ss, vs, label)`: Plot the clustered heatmap. Accessible by `from SSVD.functions import clusterheatmap`. 
 
-Also, the optimization procedures are included in the package. See the report for detailed discussions. 
+Also, the optimization procedures are recorded in the package. See the report for detailed discussions. 
 
  
 ## References
