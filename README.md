@@ -12,11 +12,13 @@ You can install the package by using: `pip install git+https://github.com/Yuxuan
 
 The key functions in this package are:
 
-- `SSVD_layer(X, lam_grid, gamma1, gamma2, max_iter=5000, tol=1e-6)`: Get the sparse SVD layer given the data matrix X at a SVD layer and the tuning parameters grid.
+- `SSVD_layer(X, lam_grid, gamma1, gamma2, max_iter=5000, tol=1e-6)`: Get the sparse SVD layer given the data matrix X at a SVD layer and the tuning parameters grid. Accessible by `from SSVD.functions import SSVD_layer`. 
 
-- `SSVD(X, num_layer, lam_grid, gamma1, gamma2, max_iter=5000, tol=1e-6)`: Get the SSVD given the data matrix X and the desired number of SSVD layers.
+- `SSVD(X, num_layer, lam_grid, gamma1, gamma2, max_iter=5000, tol=1e-6)`: Get the SSVD given the data matrix X and the desired number of SSVD layers. Accessible by `from SSVD.functions import SSVD`. 
 
-- `clusterheatmap(us, ss, vs, label)`: Plot the clustered heatmap. 
+- `clusterheatmap(us, ss, vs, label)`: Plot the clustered heatmap. Accessible by `from SSVD.functions import clusterheatmap`. 
+
+Also, the optimization procedures are included in the package. See the report for detailed discussions. 
 
  
 ## References
