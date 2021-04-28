@@ -14,7 +14,7 @@ Ldata = pd.read_csv('../data/LungCancerData.txt', sep=' ', header = None)
 Ldata = np.array(Ldata.T) 
 
 
-n_iters, us, vs, ss, lambda_us, lambda_vs = SSVD3c(Ldata, 1, lam_grid, gamma1, gamma2)
+n_iters, us, vs, ss, lambda_us, lambda_vs = SSVD(Ldata, 1, lam_grid, gamma1, gamma2)
 
 level   = np.concatenate((np.ones(20), np.ones(33-20)*2, np.ones(50-33)*3, np.ones(56-50)*4))
 
