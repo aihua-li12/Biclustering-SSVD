@@ -1,3 +1,6 @@
+## This is the most efficient version, corresponding to version 3 in the report,
+## before going into Cython.
+
 import numpy as np 
 import scipy.linalg as la 
 import pandas as pd 
