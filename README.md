@@ -18,7 +18,7 @@ import SSVDpkg_663proj21
 from SSVDpkg_663proj21 import functions
 ```
 
-The key functions in this package are:
+The key functions in the `functions` module are:
 
 - `SSVD_layer(X, lam_grid, gamma1, gamma2, max_iter=5000, tol=1e-6)`: Get the sparse SVD layer given the data matrix X at a SVD layer and the tuning parameters grid. Accessible by `functions.SSVD()`. 
 
@@ -26,7 +26,7 @@ The key functions in this package are:
 
 - `clusterheatmap(us, ss, vs, label)`: Plot the clustered heatmap. Accessible by `functions.clusterheatmap()`. 
 
-Also, the optimization procedures are recorded in the package. See the report for detailed discussions. 
+Also, the optimization procedures are recorded in different modules in this package. See the report for detailed discussions on the optimization. 
 
  
 ## References
