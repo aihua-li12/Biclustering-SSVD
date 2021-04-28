@@ -1,11 +1,11 @@
 # STA663-final-project-AY
 Authors: Aihua Li, Yuxuan Chen
 
-Based on the paper **Biclustering via Sparse Singular Value Decomposition** written by **Mihee Lee**, **Haipeng Shen**, **Jianhua Z. Huang**, and **J.S. Marron** from University of North Carolina at Chapel Hill, this project tries to investigate, develope, and realize biclustering by utilizing Sparse Singular Value Decomposition (SSVD).
+Based on the paper **Biclustering via Sparse Singular Value Decomposition** written by **Mihee Lee**, **Haipeng Shen**, **Jianhua Z. Huang**, and **J.S. Marron** from University of North Carolina at Chapel Hill [1], this project tries to investigate, develope, and realize biclustering by utilizing Sparse Singular Value Decomposition (SSVD).
 
 SSVD is a tool for biclustering by seeking the low-rank matrix approximation with sparsed left and right sigular vectors of original matrix. This project realizes the SSVD algorithm and optimizes the process. 
 
-Simulations, application on the tumor data set, and comparative analysis between SSVD, SVD, and SPCA are included in the report. Results are accessible in the corresponding Jupyter notebooks. 
+Simulations, application on the tumor data set [2], and comparative analysis between SSVD, SVD, and SPCA are included in the report. Results are accessible in the corresponding Jupyter notebooks. 
 
 
 You can install the package by using: `pip install git+https://github.com/YuxuanMonta/STA663-final-project-AY.git@main`
