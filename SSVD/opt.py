@@ -1,19 +1,15 @@
+## This is the final version optimized by Cython.
+## The following should be run in Jupyter notebook. 
+
+import cython
 %load_ext cython
 
-%%cython -a
+%%cython
 
 import numpy as np 
-import scipy.linalg as la 
-import pandas as pd 
-import matplotlib.pyplot as plt
-import seaborn as sns
-import numpy as np 
-from functools import reduce
-from sklearn.decomposition import SparsePCA
+import scipy.linalg as la
 import cython
 from cython.parallel import parallel, prange
-import time
-
 
 cdef extern from "math.h":
     double log(double x) nogil
@@ -242,14 +238,3 @@ cpdef SSVD3c(X, num_layer, lam_grid, gamma1, gamma2, max_iter=5000, tol=1e-6):
         if np.all(u == 0) or np.all(v == 0):  # full shrinkage (i.e., all zeros in the vector)
             break
     return n_iters, us, vs, ss, lambda_us, lambda_vs
-
-
-
-
-
-
-
-
-
-
-
