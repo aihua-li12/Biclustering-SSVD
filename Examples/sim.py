@@ -23,7 +23,7 @@ X_sim = X_star + np.random.randn(n,d)
 lam_grid = np.linspace(0, 8, 100)
 gamma1 = gamma2 = 2
 
-n_iters, u, v, s, lambda_us, lambda_vs = SSVD3c(X_sim, 1, lam_grid, gamma1, gamma2)
+n_iters, u, v, s, lambda_us, lambda_vs = SSVD(X_sim, 1, lam_grid, gamma1, gamma2)
 
 clusterheatmap(u, s, v, label)
 pass
