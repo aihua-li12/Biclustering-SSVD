@@ -12,7 +12,7 @@ You can install the package by using
 ```
 pip install SSVDpkg_663proj21
 ```
-in the terminal. After the installation, in Python, import the functions by
+in the terminal. After the installation, in Python, import the `functions` module by
 ```
 import SSVDpkg_663proj21
 from SSVDpkg_663proj21 import functions
