@@ -1,4 +1,3 @@
-
 import numpy as np 
 import scipy.linalg as la 
 import pandas as pd 
@@ -30,30 +29,7 @@ def clusterheatmap(us, ss, vs, label):
     return plot
 
 
-
-  
-  
-  
-  
-
-  def get_tilde(lam, tilde_hat, w):
-    part1 = np.sign(tilde_hat)
-    part2 = np.abs(tilde_hat)-lam*w/2
-    part2[part2<np.zeros(part2.shape)] = 0
-    tilde = np.multiply(part1, part2)
-    return tilde
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
- def update_uv(u_old, v_old, X, gamma1, gamma2, lam_grid):
+def update_uv(u_old, v_old, X, gamma1, gamma2, lam_grid):
     """Update u and v once given the current u and v.
     Input: 
         u_old: (n, 1)
@@ -129,18 +105,10 @@ def clusterheatmap(us, ss, vs, label):
             u_tilde = np.multiply(part1, part2)  # (n, 1)
             u_new = u_tilde / np.linalg.norm(u_tilde)
 
-    return u_new, v_new, lambda_u, lambda_v 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  def SSVD_layer(X, lam_grid, gamma1, gamma2, max_iter=5000, tol=1e-6):
+    return u_new, v_new, lambda_u, lambda_v
+
+
+def SSVD_layer(X, lam_grid, gamma1, gamma2, max_iter=5000, tol=1e-6):
     """Get the sparse SVD layer given the data matrix X at a SVD layer and the tuning parameters grid.
     Input: 
         X: (n, d), can be the original data matrix or the residual matrix
@@ -176,18 +144,8 @@ def clusterheatmap(us, ss, vs, label):
     if n_iter == max_iter:
         print("Warning: The maximum iteration has been achieved. Please consider increasing `max_iter`.")
     return n_iter, u, v, s, lambda_u, lambda_v
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  def SSVD(X, num_layer, lam_grid, gamma1, gamma2, max_iter=5000, tol=1e-6):
+
+def SSVD(X, num_layer, lam_grid, gamma1, gamma2, max_iter=5000, tol=1e-6):
     """Get the SSVD given the data matrix X and the desired number of SSVD layers.
     Input: 
         X: (n, d), the original data matrix
@@ -224,24 +182,3 @@ def clusterheatmap(us, ss, vs, label):
         if np.all(u == 0) or np.all(v == 0):  # full shrinkage (i.e., all zeros in the vector)
             break
     return n_iters, us, vs, ss, lambda_us, lambda_vs
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-
-
