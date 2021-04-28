@@ -16,7 +16,7 @@ Ldata = np.array(Ldata.T)
 
 n_iters, us, vs, ss, lambda_us, lambda_vs = SSVD(Ldata, 1, lam_grid, gamma1, gamma2)
 
-level   = np.concatenate((np.ones(20), np.ones(33-20)*2, np.ones(50-33)*3, np.ones(56-50)*4))
+level   = np.concatenate((np.ones(20), np.ones(13)*2, np.ones(17)*3, np.ones(6)*4))
 
 
 clusterheatmap(us,ss,vs,level)
