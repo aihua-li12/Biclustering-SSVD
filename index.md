@@ -12,7 +12,7 @@ Sparse singular value decomposition (SSVD) is an algorithm proposed for bicluste
 
 A complete document for package `SSVDpkg_663proj21` is the [package source page](https://github.com/aihua-li12/Biclustering-SSVD), where we have presented the codes optimization procedures. Simulation examples and real data application on a tumor dataset [2] are also included in the document. Besides, comparative analysis between SSVD, SVD, and SPCA are performed. 
 
-For more information, see the [package source page](https://github.com/aihua-li12/Biclustering-SSVD).
+For more information, click [package source page](https://github.com/aihua-li12/Biclustering-SSVD).
 
 ## Basic Usage
 
