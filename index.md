@@ -1,37 +1,42 @@
-## Welcome to GitHub Pages
+# Sparse Singular Value Decomposition
 
-You can use the [editor on GitHub](https://github.com/aihua-li12/STA663-final-project-AY/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Authors: Aihua Li, Yuxuan Chen
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Date: June 29, 2021
 
-### Markdown
+## Introduction
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Based on the paper **Biclustering via Sparse Singular Value Decomposition** written by **Mihee Lee**, **Haipeng Shen**, **Jianhua Z. Huang**, and **J.S. Marron** from University of North Carolina at Chapel Hill [1], this project tries to investigate, develop, and realize biclustering by utilizing Sparse Singular Value Decomposition (SSVD).
 
-```markdown
-Syntax highlighted code block
+SSVD is a tool for biclustering by seeking the low-rank matrix approximation with sparsed left and right sigular vectors of original matrix. This project realizes the SSVD algorithm and optimizes the process. 
 
-# Header 1
-## Header 2
-### Header 3
+Simulations, application on the tumor data set [2], and comparative analysis between SSVD, SVD, and SPCA are included in the report. Results are accessible in the corresponding Jupyter notebooks. 
 
-- Bulleted
-- List
+## Basic Usage
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+You can install the package by using 
+```
+pip install SSVDpkg_663proj21
+```
+in the terminal. After the installation, in Python, import the `functions` module by
+```
+import SSVDpkg_663proj21
+from SSVDpkg_663proj21 import functions
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+The key functions in the `functions` module are:
 
-### Jekyll Themes
+- `SSVD_layer(X, lam_grid, gamma1, gamma2, max_iter=5000, tol=1e-6)`: Get the sparse SVD layer given the data matrix X at a SVD layer and the tuning parameters grid.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/aihua-li12/STA663-final-project-AY/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+- `SSVD(X, num_layer, lam_grid, gamma1, gamma2, max_iter=5000, tol=1e-6)`: Get the SSVD given the data matrix X and the desired number of SSVD layers.
 
-### Support or Contact
+- `clusterheatmap(us, ss, vs, label)`: Plot the clustered heatmap.
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Also, the optimization procedures are recorded in different modules in this package. See the report for detailed discussions on the optimization. 
+
+ 
+## References
+
+[1] Lee, M., Shen, H., Huang, J., and Marron, J. (2010). Biclustering via sparse singular value decomposition. *Biometrics* **66**, 1087-1095. 
+ 
+[2] UCI machine Learning Repository: Gene EXPRESSION CANCER rna-seq data set. (n.d.). Retrieved April 28, 2021, from http://archive.ics.uci.edu/ml/datasets/gene+expression+cancer+RNA-Seq
