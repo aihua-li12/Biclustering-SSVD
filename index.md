@@ -1,4 +1,4 @@
-# Sparse Singular Value Decomposition
+# `SSVDpkg_663proj21` Package on Sparse Singular Value Decomposition
 
 Authors: Aihua Li, Yuxuan Chen
 
