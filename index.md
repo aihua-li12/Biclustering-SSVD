@@ -1,4 +1,4 @@
-# Python Package on Biclustering by Sparse Singular Value Decomposition
+# Biclustering by Sparse Singular Value Decomposition in Python
 
 Authors: Aihua Li, Yuxuan Chen
 
@@ -8,10 +8,11 @@ Date: June 29, 2021
 
 This is an introduction page for Python package `SSVDpkg_663proj21`.
 
-Sparse singular value decomposition (SSVD) is an algorithm for biclustering proposed by **Biclustering via Sparse Singular Value Decomposition** written by **Mihee Lee**, **Haipeng Shen**, **Jianhua Z. Huang**, and **J.S. Marron** from University of North Carolina at Chapel Hill [1]. It is realized by low-rank matrix approximation with sparsed left and right sigular vectors of original matrix.
+Sparse singular value decomposition (SSVD) is an algorithm proposed for biclustering [1], realized by low-rank matrix approximation with sparsed left and right sigular vectors of original matrix. Package `SSVDpkg_663proj21` provides functions to realize the SSVD algorithm in Python and optimizes the process. Codes are optimized by `Cython`, a C-extensions in Python. 
 
-Package `SSVDpkg_663proj21` provides functions to realize the SSVD algorithm and optimizes the process. We have also provided simulation examples and data applications on the tumor dataset [2]. Besides, comparative analysis between SSVD, SVD, and SPCA are included in the report. The complete analysis report is accessible on the package source page https://github.com/aihua-li12/STA663-final-project-AY.
+A complete document for package `SSVDpkg_663proj21` is accessible on https://github.com/aihua-li12/STA663-final-project-AY, where we have presented the codes optimization procedures. Simulation examples and real data application on a tumor dataset [2] are also included in the document. Besides, comparative analysis between SSVD, SVD, and SPCA are performed. 
 
+For more information, see the package source page https://github.com/aihua-li12/STA663-final-project-AY.
 
 ## Basic Usage
 
